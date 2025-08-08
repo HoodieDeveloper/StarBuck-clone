@@ -1,0 +1,166 @@
+/* GLOBAL RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+.find{
+    margin-left:45%;
+    color: #00754a;
+}
+.find:hover{
+    margin-left:45%;
+    color: #3ea37e;
+}
+/* IMAGE */
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* MAIN SECTIONS */
+.main-content {
+    background-color: #f3f1e7;
+    text-align: center;
+}
+
+.main-content-2 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.main-content-2 button {
+    border-radius: 10px;
+}
+
+.main-content-3 {
+    width: 100%;
+    background-color: #f3f1e7;
+    text-align: center;
+}
+
+/* This is the background image you want to remove on small screens */
+.main-content-4 {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/589/630/non_2x/green-background-with-fading-square-and-dots-free-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* BUTTONS */
+button.btn {
+    border-radius: 20px;
+    width: 20%;
+    margin-left: 10%;
+}
+
+/* NAVBAR LINKS */
+.nav-link:hover {
+    border-bottom: 4px solid #00754a;
+    width: fit-content;
+}
+
+/* TOP BUTTONS */
+.top button {
+    width: 100%;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tab-content{
+    background-color:#d4e9e2;
+    width: 100%;
+}
+.btn-success{
+    margin-right: 10%;
+}
+.link >a{
+    text-decoration: none;
+    color: rgb(113, 109, 109);
+}
+.link >a:hover{
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+.link-2>a {
+    text-decoration: none;
+    color: rgb(113, 109, 109);
+}
+
+.link-2>a:hover {
+   text-decoration: underline;
+    color: rgb(2, 2, 2);
+}
+.offcanvas-body a {
+    text-decoration: none !important;
+}
+
+.offcanvas-body a:hover {
+    text-decoration: none !important;
+}
+/* ====== MEDIA QUERY FOR SMALL SCREENS ====== */
+@media screen and (max-width: 470px) {
+ 
+    .main-content {
+        text-align: center;
+    }
+
+
+    /* Responsive Button */
+    button.btn {
+        border-radius: 20px;
+        width: 80%;
+        /* wider on small screens */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .top>button,
+    .top>p {
+        display: flex;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+        .find {
+            display: none;
+          
+        }
+    /* ✅ Remove background image for small screens */
+    .main-content-4 {
+        background-image: none !important;
+        background-color: #d4e9e2;
+        /* fallback color */
+    }
+ 
+    
+}

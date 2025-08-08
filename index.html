@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-white border-bottom p-3">
+    <div class="container-fluid">
+        <!-- Flex container for left and right sections -->
+        <div class="d-flex justify-content-between align-items-center w-100">
+
+            <!-- Left side: Logo + Links -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand me-4" href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg"
+                        alt="Logo" width="40" height="40">
+                </a>
+
+                <!-- Desktop nav links -->
+                <ul class="navbar-nav flex-row gap-4 d-none d-md-flex display-6">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Rewards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gift.html">Gift Cards</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right side: Find a store + buttons -->
+            
+            <span class="find"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfs2ebHNToWrEDCagcY2wxRTHXZiR9T7IPA&s" alt=""
+                width="40" height="40">Find a store</span>
+            <div class="d-none d-md-flex  ">
+                <a href="sing-in.html"><button type="button" class="btn btn-outline-success" style="width: 100px;">Sign in</button></a>
+                <a href=""><button type="button" class="btn btn-outline-dark ms-3" style="width: 100px;">Join Now</button></a>
+            </div>
+
+            <!-- Mobile: Hamburger menu -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color: 
+#1e3932;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Starbucks® Rewards</a>
+    </div>
+</nav>
+    <!-- Offcanvas for small screens -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gift.html">Gift Cards</a>
+                </li>
+            </ul>
+            <div class="top">
+                <span class="find me-5"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYfs2ebHNToWrEDCagcY2wxRTHXZiR9T7IPA&s" alt=""
+                        width="40" height="40">Find a store</span>
+                    <a href="sing-in.html"><button type="button" class="btn btn-outline-success" style="width: 100px;">Sign in</button></a>
+                <a href=""><button type="button" class="btn btn-outline-dark my-5" style="width: 100px;">Join Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <section class="main-content">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6">
+                    <h1 class="fw-bold text-success display-5">It’s a great day for free coffee</h1>
+                    <p class="my-5 text-success">Sign up and start enjoying the perks of Starbucks® Rewards.</p>
+                    <button class="btn btn-success">Join Now</button>
+                    <p class="my-2 ms-5">It's even better <a href="#">with the app.</a></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://about.starbucks.com/uploads/2025/05/Starbucks-Iced-Shaken-Espresso-scaled.jpg" class="img-fluid" alt="Coffee Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content-2 ">
+        <div class="container my-5 ">
+            <div class="row  ">
+                <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-1@2x.jpg" alt="" width="50" height="50">
+                <h3 class="my-2">Create an account</h3>
+                <p class="my-2">To get started, join now. You can also Join in the app to get access to the full range of Starbucks® Rewards benefits.</p>
+                
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-2@2x.jpg" alt="" width="50" height="50">
+                <h3 class="my-2">Order and pay how you’d like</h3>
+                <p class="my-2">Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. Learn how</p>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/getting-started-3@2x.jpg"  alt=""width="50" height="50">
+                <h3 class="my-2">Earn Stars, get Rewards</h3>
+                <p class="my-2">As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as
+                25 Stars!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="tap-part py-5">
+    <div class="container-fluid ">
+        <h2 class="text-center fw-bold mb-5">Get your favorites for free</h2>
+        <ul class="nav nav-tabs justify-content-center mb-4" id="rewardsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="25-tab" data-bs-toggle="tab" data-bs-target="#25" type="button"
+                    role="tab" aria-controls="25" aria-selected="true" style="color: black; font-weight: bold;">25 <span style="color:yellow; font-weight: bolder; font-size: 20px;">★</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button  class="nav-link" id="100-tab" data-bs-toggle="tab" data-bs-target="#100" type="button"
+                    role="tab" aria-controls="100" aria-selected="false" style="color: black; font-weight: bold;">100<span style="color:yellow; font-weight: bolder; font-size: 20px;">★</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="200-tab" data-bs-toggle="tab" data-bs-target="#200" type="button"
+                    role="tab" aria-controls="200" aria-selected="false" style="color: black; font-weight: bold;">200<span style="color:yellow; font-weight: bolder; font-size: 20px;">★</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="300-tab" data-bs-toggle="tab" data-bs-target="#300" type="button"
+                    role="tab" aria-controls="300" aria-selected="false" style="color: black; font-weight: bold;">300<span style="color:yellow; font-weight: bolder; font-size: 20px;">★</span></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="400-tab" data-bs-toggle="tab" data-bs-target="#400" type="button"
+                    role="tab" aria-controls="400" aria-selected="false" style="color: black; font-weight: bold;">400<span style="color:yellow; font-weight: bolder; font-size: 20px;">★</span></button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="rewardsTabContent">
+            <div class="tab-pane fade show active" id="25" role="tabpanel" aria-labelledby="25-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/25.png"
+                            alt="25 Stars reward image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Customize your drink</h3>
+                        <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your
+                            favorite syrup.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="100" role="tabpanel" aria-labelledby="100-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png"
+                            alt="100 Stars reward image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Brewed hot coffee or bakery item</h3>
+                        <p>Pair coffee cake or an almond croissant with your fresh cup of hot brew.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="200" role="tabpanel" aria-labelledby="200-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png"
+                            alt="200 Stars reward image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Handcrafted drink or hot breakfast</h3>
+                        <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast
+                            sandwich or oatmeal on us.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="300" role="tabpanel" aria-labelledby="300-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/300.png"
+                            alt="200 Stars reward image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 ">
+                        <h3>Sandwich, protein box or at-home coffee</h3>
+                        <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="400" role="tabpanel" aria-labelledby="400-tab">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png"
+                            alt="200 Stars reward image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Select Starbucks® merchandise</h3>
+                        <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="main-content-2 ">
+    <div class="container my-5 ">
+        <div class="row">
+            <div class="col">
+                <h1>Endless Extras</h1>
+                <p>Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, tasty Rewards and—yes, free
+                coffee.</p>
+            </div>
+        </div>
+        <div class="row my-5   ">
+            <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg" alt="" width="100px" height="100px">
+                <h3 class="my-2">Fun freebies</h3>
+                <p class="my-2">Not only can you earn free food, drinks and more, look forward to a birthday treat on us.</p>
+                <a href="#" class="text-success"> learn more</a>
+
+            </div>
+
+            <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg" alt="" width="100px" height="100x">
+                <h3 class="my-2">Order & pay aheade</h3>
+                <p class="my-2">Master the art of ordering ahead with saved favorites and payment methods.</p>
+                <a href="#" class="text-success"> learn more</a>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg" alt="" width="100px" height="100px">
+                <h3 class="my-2">Get to free faster</h3>
+                <p class="my-2">Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+                <a href="#" class="text-success"> learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content-3">
+    <div class="container">
+        <!-- Heading Row -->
+        <div class="row  justify-content-center align-items-center">
+            <div class="col text-center">
+                <h2>Cash or card, you earn Stars</h2>
+                <p>
+                    No matter how you pay, you can earn Stars with your morning coffee.
+                    Those Stars add up to (really delicious) Rewards.
+                </p>
+            </div>
+        </div>
+
+        <!-- 1★ Star Row -->
+        <div class="row my-4 align-items-start">
+            <div class="col-12 col-md-3">
+                <h3 class="text-start">1★ Star per dollar</h3>
+                <p>Pay as you go</p>
+            </div>
+            <div class="col-4 col-md-2 my-3 text-center">
+                <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1A.png" alt="Scan and pay" width="100" height="150">
+            </div>
+            <div class="col-8 col-md-3">
+                <h5>Scan and pay separately</h5>
+                <p>Use cash or credit/debit card at the register.</p>
+            </div>
+            <div class="col-4 col-md-2 my-3 text-center">
+                <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1B.png" alt="Save payment" width="100" height="150">
+            </div>
+            <div class="col-8 col-md-2">
+                <h5>Save payment in the app</h5>
+                <p>
+                    Check-out faster by saving a credit/debit card or PayPal to your account.
+                    You’ll be able to order ahead or scan and pay at the register in one step.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2★ Stars Row -->
+        <div class="row my-5 align-items-start">
+            <div class="col-12 col-md-3">
+                <h3 class="text-start">2★ Stars per dollar</h3>
+                <p>Add funds in the app</p>
+            </div>
+            <div class="col-4 col-md-2 my-3 text-center">
+                <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2A.png" alt="Preload" width="100" height="150">
+            </div>
+            <div class="col-8 col-md-3">
+                <h5>Preload</h5>
+                <p>
+                    To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any
+                    payment option. Scan and pay in one step or order ahead in the app.
+                </p>
+            </div>
+            <div class="col-4 col-md-2 my-3 text-center">
+                <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2B.png" alt="Register gift card" width="100" height="150">
+            </div>
+            <div class="col-8 col-md-2">
+                <h5>Register your gift card</h5>
+                <p>
+                    Then use it to pay through the app. You can even consolidate balances from multiple cards in one
+                    place.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content-4 py-5 ">
+    <div class="container-fluid p-5" style="background-color: #d4e9e2;">
+        <div class="row">
+            <div class="col text-center my-5">
+                <h3>Keep the Rewards Coming</h3>
+                <p>
+                    The Rewards don't stop at your morning coffee. Join Starbucks® Rewards and unlock perks from our
+                    partners, all while earning more Stars.
+                </p>
+            </div>
+        </div>
+
+        <!-- Keep everything inside container-fluid for full width -->
+        <div class="row justify-content-center px-3 px-md-5">
+            <!-- First Card -->
+            <div class="col-12 col-md-4 text-center mb-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png" alt="Delta SkyMiles" class="img-fluid mb-3"
+                    style="max-height: 150px;">
+                <p>
+                    <a href="#" class="text-success fw-bold">Link your Delta SkyMiles®</a>
+                    and Starbucks® Rewards accounts to earn miles on Starbucks Card reloads of $25 or more, plus
+                    Double Stars on travel days.¹
+                </p>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-12 col-md-4 text-center mb-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/bank-of-america.png" alt="Bank of America" class="img-fluid mb-3"
+                    style="max-height: 150px;">
+                <p>
+                    <a href="#" class="text-success fw-bold">Link your Bank of America</a>
+                    eligible card and Starbucks® Rewards account to earn 2% Cash Back and Bonus Stars on qualifying
+                    Starbucks in-app purchases.²
+                </p>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-12 col-md-4 text-center mb-5">
+                <img src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/marriott-bonvoy/marriott-logo.png" alt="Marriott" class="img-fluid mb-3" style="max-height: 150px;">
+                <p>
+                    <a href="#" class="text-success fw-bold">Link your Marriott Bonvoy®</a>
+                    and Starbucks® Rewards accounts to earn points on Starbucks purchases and get exclusive travel
+                    perks.³
+                </p>
+            </div>
+        </div>
+
+        <!-- Button Section -->
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-success px-4 py-2 fs-5 rounded-pill">
+                    Join Starbucks® Rewards
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="question my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h3>Questions?</h3>
+                <p>We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked terms
+                 <a href="#" class="text-success">right over here</a>
+                .</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content-5 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col ">
+              <p>At participating stores. Restrictions apply. <br>
+            
+            1Excludes taxes and gratuities. At participating stores. Some restrictions apply. Flights purchased close to departure
+            may not earn double Stars. Stars and miles may not be earned on purchases of alcohol, Starbucks Cards and Starbucks Card
+            reloads. For details, visit
+            <a href="#" class="text-success">deltastarbucks.com/terms.↩</a> <br>
+        2At participating stores only. Some restrictions apply. Linked Card members will earn 2% Cash Back on the full purchase
+        price of every Qualifying Purchase. Extra Star offer excludes taxes and tips. Stars may not be earned on purchases of
+        alcohol or on reloads of Starbucks Cards that are not registered. For details, visit
+        Terms and Conditions
+        <a href="#" class="text-success">. Bank of America, N.A. Member FDIC.↩</a> <br>
+    3Individuals must link loyalty program accounts to participate in offer. Members with linked accounts will earn: (a) double Starbucks Rewards Stars on Qualifying Starbucks Transactions during Eligible Stays at Participating Marriott Bonvoy Hotels, excluding stays at Homes & Villas by Marriott Bonvoy and The Ritz-Carlton Yacht Collection, and (b) earn 100 Marriott Bonvoy Points upon completion of 3 Qualifying Starbucks Transactions during Marriott Bonvoy Week. Qualifying Starbucks Transactions must be made at U.S. participating Starbucks stores and exclude purchases of alcoholic beverages, Starbucks Card eGifts and physical Starbucks gift. To earn Double Stars, the applicable stay must qualify as an Eligible Stay at a Participating Marriott Bonvoy® Hotel under offer terms and conditions. Other restrictions and exclusions apply. For full offer terms and conditions, visit 
+<a href="#" class="text-success">Starbucks.com/MarriottBonvoy</a>
+. Marriott Bonvoy® and its affiliated brands and hotels are the registered trademarks and/or service marks of Marriott International, Inc. and its affiliates. Used under license from Marriott International, Inc.↩</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-content-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Earning Stars</h5>
+                <p>Stars cannot be earned on purchases of alcohol, Starbucks Cards or Starbucks Card reloads. <br><br>Earn 1 Star per $1 spent when you scan your member barcode in the app, then pay with cash, credit/debit cards or mobile
+                wallets at participating stores. You can also earn 1 Star per $1 spent when you link a payment method and pay directly
+                through the app. <br> <br>Earn 2 Stars per $1 spent when you load funds and pay with your digital Starbucks Card in the app. You can also earn 2
+                Stars per $1 spent when you pay in-person at a participating store with your registered physical Starbucks Card or scan
+                your member barcode in the app, and then use any physical Starbucks Card (regardless of whether it is registered) to
+                complete the purchase.</p>
+                <h5>Benefits</h5>
+                <p>
+                Free refills available during same in-store visit only. To qualify for the Birthday Reward, you must have made at least
+                one Star-earning transaction.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Terms of Use</h5>
+                <p>
+                For full program details visit
+                <a href="#" class="text-success">starbucks.com/rewards/terms</a><br> <br>
+                
+                
+                Starbucks® Rewards benefits are available at participating Starbucks stores. Not all stores have the ability to honor
+                Rewards at this time. Visit the
+                <a href="#" class="text-success">Starbucks Store Locator</a>
+                and search for locations honoring “Redeem Rewards”..</p>
+                <h5>Redeeming Rewards</h5>
+                <p>
+      
+                Rewards cannot be redeemed for alcoholic beverages or multi-serve items. You pay the difference for any beverage
+                customization over $1 and/or merchandise item over $20. Not all stores honor tiered Rewards. Select stores redeem 200
+                Stars for free food or drink items only.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="main-content-7 py-4">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-2 col-12 mb-3">
+                <h5 class="d-md-block d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#aboutCollapse" aria-expanded="false" aria-controls="aboutCollapse">
+                    About Us <span class="d-md-none">&#9662;</span>
+                </h5>
+                <div class="collapse d-md-block" id="aboutCollapse">
+                    <div class="link my-3">
+                        <a href="#" class="d-block mb-2">Our Company</a>
+                        <a href="#" class="d-block mb-2">Our Coffee</a>
+                        <a href="#" class="d-block mb-2">About Starbucks</a>
+                        <a href="#" class="d-block mb-2">Starbucks Archive</a>
+                        <a href="#" class="d-block mb-2">Investor Relations</a>
+                        <a href="#" class="d-block mb-2">Customer Service</a>
+                        <a href="#" class="d-block mb-2">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Careers -->
+            <div class="col-md-2 col-12 mb-3">
+                <h5 class="d-md-block d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#careersCollapse" aria-expanded="false" aria-controls="careersCollapse">
+                    Careers <span class="d-md-none">&#9662;</span>
+                </h5>
+                <div class="collapse d-md-block" id="careersCollapse">
+                    <div class="link my-3">
+                        <a href="#" class="d-block mb-2">Culture and Values</a>
+                        <a href="#" class="d-block mb-2">Belonging at Starbucks</a>
+                        <a href="#" class="d-block mb-2">College Achievement Plan</a>
+                        <a href="#" class="d-block mb-2">Alumni Community</a>
+                        <a href="#" class="d-block mb-2">U.S. Careers</a>
+                        <a href="#" class="d-block mb-2">Customer Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Impact -->
+            <div class="col-md-2 col-12 mb-3">
+                <h5 class="d-md-block d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#impactCollapse" aria-expanded="false" aria-controls="impactCollapse">
+                    Social Impact <span class="d-md-none">&#9662;</span>
+                </h5>
+                <div class="collapse d-md-block" id="impactCollapse">
+                    <div class="link my-3">
+                        <a href="#" class="d-block mb-2">Communities</a>
+                        <a href="#" class="d-block mb-2">Starbucks Foundation</a>
+                        <a href="#" class="d-block mb-2">Sustainability</a>
+                        <a href="#" class="d-block mb-2">Environmental and Social Impact Reporting</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Business Partners -->
+            <div class="col-md-2 col-12 mb-3">
+                <h5 class="d-md-block d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#businessCollapse" aria-expanded="false" aria-controls="businessCollapse">
+                    For Business Partners <span class="d-md-none">&#9662;</span>
+                </h5>
+                <div class="collapse d-md-block" id="businessCollapse">
+                    <div class="link my-3">
+                        <a href="#" class="d-block mb-2">Landlord Support Center</a>
+                        <a href="#" class="d-block mb-2">Suppliers</a>
+                        <a href="#" class="d-block mb-2">Corporate Gift Card Sales</a>
+                        <a href="#" class="d-block mb-2">Office and Foodservice Coffee</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order and Pick Up -->
+            <div class="col-md-2 col-12 mb-3">
+                <h5 class="d-md-block d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                    data-bs-target="#orderCollapse" aria-expanded="false" aria-controls="orderCollapse">
+                    Order and Pick Up <span class="d-md-none">&#9662;</span>
+                </h5>
+                <div class="collapse d-md-block" id="orderCollapse">
+                    <div class="link my-3">
+                        <a href="#" class="d-block mb-2">Order on the App</a>
+                        <a href="#" class="d-block mb-2">Order on the Web</a>
+                        <a href="#" class="d-block mb-2">Delivery</a>
+                        <a href="#" class="d-block mb-2">Order and Pick Up Options</a>
+                        <a href="#" class="d-block mb-2">Explore and Find Coffee for Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-content-8 py-4">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS930NB9siRwm-GWuOflJwQeU5xsa1Zq4BpCA&s"
+                    alt="" width="50" height="50">
+                <img src="data:image/png;base64,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"
+                    alt="" width="50" height="50">
+                <img src="data:image/png;base64,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"
+                    alt="" width="50" height="50">
+                <img src="data:image/png;base64,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"
+                    alt="" width="50" height="50">
+                <img src="data:image/png;base64,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"
+                    alt="" width="50" height="50">
+                <img src="data:image/png;base64,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"
+                    alt="" width="50" height="50">
+                <div class="link-2 my-3">
+                    <a href="#" class="d-block mb-2">Privacy Notice</a>
+                    <a href="#" class="d-block mb-2">Consumer Health Privacy Notice</a>
+                    <a href="#" class="d-block mb-2">Terms of Use</a>
+                    <a href="#" class="d-block mb-2">Do Not Share My Personal Information</a>
+                    <a href="#" class="d-block mb-2">CA Supply Chain Act</a>
+                    <a href="#" class="d-block mb-2">Accessibility</a>
+                    <a href="#" class="d-block mb-2">Cookie Preferences</a>
+                    <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

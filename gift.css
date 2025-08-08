@@ -1,0 +1,124 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html,
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+.card img {
+           border-radius: 10px;
+       }
+.text-success{
+    margin-left: 80%;
+}
+       .carousel-control-prev-icon,
+       .carousel-control-next-icon {
+           background-color: rgba(0, 0, 0, 0.5);
+           border-radius: 50%;
+ }
+/* NAVBAR LINKS */
+.nav-link:hover {
+    border-bottom: 4px solid #00754a;
+    width: fit-content;
+}
+.card-part:hover{
+ transform: translateY(-10px);
+}
+.card-part{
+    border-radius: 10px;
+}
+ .sticky {
+     display: flex;
+     gap: 50px;
+
+ }
+.offcanvas-body a {
+    text-decoration: none !important;
+}
+
+.offcanvas-body a:hover {
+    text-decoration: none !important;
+}
+ .sticky a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .find {
+     margin-left: 45%;
+     color: #00754a;
+ }
+
+ .find:hover {
+     margin-left: 45%;
+     color: #3ea37e;
+ }
+
+ button.btn {
+     border-radius: 20px;
+     width: 20%;
+     margin-left: 10%;
+ }
+.main-content-3{
+    background-color: #a5ebd1;
+}
+ .link>a {
+     text-decoration: none;
+     color: rgb(113, 109, 109);
+ }
+
+ .link>a:hover {
+     text-decoration: none;
+     color: rgb(2, 2, 2);
+ }
+
+ .link-2>a {
+     text-decoration: none;
+     color: rgb(113, 109, 109);
+ }
+
+ .link-2>a:hover {
+     text-decoration: underline;
+     color: rgb(2, 2, 2);
+ }
+.main-content-5{
+    background-color: #f3f1e7;
+}
+
+
+
+ @media screen and (max-width: 470px) {
+
+     button.btn {
+         border-radius: 20px;
+         width: 80%;
+         /* wider on small screens */
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         text-align: center;
+     }
+
+     .top>button,
+     .top>p {
+         display: flex;
+         margin-top: 10%;
+         margin-left: 10%;
+         text-align: center;
+     }
+
+     .find {
+         display: none;
+
+     }
+
+     .sidebar {
+         display: none;
+     }
+
+ }
